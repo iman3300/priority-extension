@@ -1,0 +1,426 @@
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.6">
+    <classes>
+      <class id="Priority" _delta="define">
+        <parent>PhysicalDevice</parent>
+        <properties>
+          <category>bizmodel,searchable</category>
+          <abstract>false</abstract>
+          <key_type>autoincrement</key_type>
+          <db_table>Priority</db_table>
+          <db_key_field>id</db_key_field>
+          <db_final_class_field/>
+          <naming>
+            <format>%1$s</format>
+            <attributes>
+              <attribute id="name"/>
+            </attributes>
+          </naming>
+          <display_template/>
+          <icon>images/test.png</icon>
+          <reconciliation>
+            <attributes>
+              <attribute id="name"/>
+              <attribute id="org_id"/>
+              <attribute id="organization_name"/>
+            </attributes>
+          </reconciliation>
+        </properties>
+        <fields>
+          <field id="penempatan" xsi:type="AttributeString">
+            <sql>penempatan</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="asset_tag" xsi:type="AttributeString">
+            <sql>asset_tag</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="serial" xsi:type="AttributeString">
+            <sql>serial</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="model" xsi:type="AttributeString">
+            <sql>model</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="status" xsi:type="AttributeEnum">
+            <values>
+              <value>New</value>
+              <value>In Use</value>
+              <value>Retired</value>
+            </values>
+            <sql>status</sql>
+            <default_value>New</default_value>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="checkout_to" xsi:type="AttributeString">
+            <sql>checkout_to</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="notes" xsi:type="AttributeText">
+            <sql>notes</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="default_location" xsi:type="AttributeString">
+            <sql>default_location</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="upload_image" xsi:type="AttributeBlob">
+            <sql>upload_image</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="components_accessories" xsi:type="AttributeText">
+            <sql>components_accessories</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="asset_name" xsi:type="AttributeString">
+            <sql>asset_name</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="device_hostname" xsi:type="AttributeString">
+            <sql>device_hostname</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="serial_no" xsi:type="AttributeString">
+            <sql>serial_no</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="asset_location" xsi:type="AttributeString">
+            <sql>asset_location</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="ip_address" xsi:type="AttributeString">
+            <sql>ip_address</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="site_id" xsi:type="AttributeString">
+            <sql>site_id</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="site_name" xsi:type="AttributeString">
+            <sql>site_name</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="asset_status" xsi:type="AttributeEnum">
+            <values>
+              <value>Active</value>
+              <value>Inactive</value>
+              <value>Retired</value>
+            </values>
+            <sql>asset_status</sql>
+            <default_value>Active</default_value>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="software_installed" xsi:type="AttributeText">
+            <sql>software_installed</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="operating_system" xsi:type="AttributeString">
+            <sql>operating_system</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="start_warranty_period" xsi:type="AttributeDate">
+            <sql>start_warranty_period</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="end_warranty_period" xsi:type="AttributeDate">
+            <sql>end_warranty_period</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="delivery_date" xsi:type="AttributeDate">
+            <sql>delivery_date</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="official_government_order_no" xsi:type="AttributeString">
+            <sql>official_government_order_no</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="type_brand_model" xsi:type="AttributeString">
+            <sql>type_brand_model</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="price_unit" xsi:type="AttributeDecimal">
+            <sql>price_unit</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="supplier_name" xsi:type="AttributeString">
+            <sql>supplier_name</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="warranty" xsi:type="AttributeString">
+            <sql>warranty</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="next_audit_date" xsi:type="AttributeDate">
+            <sql>next_audit_date</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="order_number" xsi:type="AttributeString">
+            <sql>order_number</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="purchase_date" xsi:type="AttributeDate">
+            <sql>purchase_date</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="eol_date" xsi:type="AttributeDate">
+            <sql>eol_date</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="supplier" xsi:type="AttributeString">
+            <sql>supplier</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+          <field id="purchase_cost" xsi:type="AttributeDecimal">
+            <sql>purchase_cost</sql>
+            <default_value/>
+            <is_null_allowed>true</is_null_allowed>
+            <tracking_level>none</tracking_level>
+          </field>
+        </fields>
+        <methods/>
+        <presentation>
+          <details>
+            <items>
+              <item id="contacts_list">
+                <rank>170</rank>
+              </item>
+              <item id="documents_list">
+                <rank>180</rank>
+              </item>
+              <item id="providercontracts_list">
+                <rank>200</rank>
+              </item>
+              <item id="services_list">
+                <rank>210</rank>
+              </item>
+              <item id="col:col1">
+                <items>
+                  <item id="name">
+                    <rank>10</rank>
+                  </item>
+                  <item id="org_id">
+                    <rank>20</rank>
+                  </item>
+                  <item id="status">
+                    <rank>30</rank>
+                  </item>
+                  <item id="business_criticity">
+                    <rank>40</rank>
+                  </item>
+                  <item id="location_id">
+                    <rank>50</rank>
+                  </item>
+                  <item id="brand_id">
+                    <rank>60</rank>
+                  </item>
+                  <item id="model_id">
+                    <rank>70</rank>
+                  </item>
+                  <item id="type">
+                    <rank>75</rank>
+                  </item>
+                  <item id="serialnumber">
+                    <rank>80</rank>
+                  </item>
+                  <item id="asset_number">
+                    <rank>90</rank>
+                  </item>
+                  <item id="phone_number">
+                    <rank>100</rank>
+                  </item>
+                  <item id="operator">
+                    <rank>110</rank>
+                  </item>
+                  <item id="plan">
+                    <rank>120</rank>
+                  </item>
+                  <item id="move2production">
+                    <rank>130</rank>
+                  </item>
+                  <item id="purchase_date">
+                    <rank>140</rank>
+                  </item>
+                  <item id="end_of_warranty">
+                    <rank>150</rank>
+                  </item>
+                  <item id="description">
+                    <rank>160</rank>
+                  </item>
+                </items>
+              </item>
+            </items>
+          </details>
+          <search>
+            <items>
+              <item id="name">
+                <rank>10</rank>
+              </item>
+              <item id="org_id">
+                <rank>20</rank>
+              </item>
+              <item id="status">
+                <rank>30</rank>
+              </item>
+              <item id="business_criticity">
+                <rank>40</rank>
+              </item>
+              <item id="location_id">
+                <rank>50</rank>
+              </item>
+              <item id="brand_id">
+                <rank>60</rank>
+              </item>
+              <item id="model_id">
+                <rank>70</rank>
+              </item>
+              <item id="type">
+                <rank>75</rank>
+              </item>
+              <item id="serialnumber">
+                <rank>80</rank>
+              </item>
+              <item id="asset_number">
+                <rank>90</rank>
+              </item>
+              <item id="move2production">
+                <rank>100</rank>
+              </item>
+              <item id="purchase_date">
+                <rank>110</rank>
+              </item>
+              <item id="end_of_warranty">
+                <rank>120</rank>
+              </item>
+              <item id="phone_number">
+                <rank>130</rank>
+              </item>
+              <item id="operator">
+                <rank>140</rank>
+              </item>
+              <item id="plan">
+                <rank>150</rank>
+              </item>
+            </items>
+          </search>
+          <list>
+            <items>
+              <item id="org_id">
+                <rank>10</rank>
+              </item>
+              <item id="status">
+                <rank>20</rank>
+              </item>
+              <item id="business_criticity">
+                <rank>30</rank>
+              </item>
+              <item id="location_id">
+                <rank>40</rank>
+              </item>
+              <item id="brand_id">
+                <rank>50</rank>
+              </item>
+              <item id="model_id">
+                <rank>60</rank>
+              </item>
+              <item id="serialnumber">
+                <rank>70</rank>
+              </item>
+              <item id="phone_number">
+                <rank>80</rank>
+              </item>
+              <item id="operator">
+                <rank>90</rank>
+              </item>
+              <item id="plan">
+                <rank>100</rank>
+              </item>
+            </items>
+          </list>
+        </presentation>
+      </class>
+    </classes>
+
+    <menus>
+      <menu id="ConfigManagementOverview" xsi:type="DashboardMenuNode" _delta="must_exist">
+        <definition>
+          <cells>
+            <cell id="2" _delta="must_exist">
+              <dashlets>
+                <dashlet id="99" xsi:type="DashletBadge" _delta="define">
+                  <rank>8</rank>
+                  <class>Priority</class>
+                </dashlet>
+              </dashlets>
+            </cell>
+          </cells>
+        </definition>
+      </menu>
+    </menus>
+
+    <profiles>
+    </profiles>
+  </itop_design>

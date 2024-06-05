@@ -1,0 +1,16 @@
+{
+  "config": {
+    "classmap-authoritative": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Priority\\iTop\\Extension\\": "src"
+    }
+  },
+  "name": "priority/priority-extension",
+  "type": "itop-extension",
+  "description": "Priority iTop Extension",
+  "require": {
+    "composer-runtime-api": "^2.0"
+  }
+}
