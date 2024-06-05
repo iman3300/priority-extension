@@ -30,204 +30,208 @@
           <field id="penempatan" xsi:type="AttributeString">
             <sql>penempatan</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="asset_tag" xsi:type="AttributeString">
             <sql>asset_tag</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="serial" xsi:type="AttributeString">
             <sql>serial</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="model" xsi:type="AttributeString">
             <sql>model</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="priority_status" xsi:type="AttributeEnum">
             <values>
-              <value>New</value>
-              <value>In Use</value>
-              <value>Retired</value>
+              <value>Active</value>
+              <value>Inactive</value>
+              <value>Maintenance</value>
+              <value>Dispose</value>
             </values>
             <sql>priority_status</sql>
             <default_value>New</default_value>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="checkout_to" xsi:type="AttributeString">
             <sql>checkout_to</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="notes" xsi:type="AttributeText">
             <sql>notes</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="default_location" xsi:type="AttributeString">
             <sql>default_location</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="upload_image" xsi:type="AttributeBlob">
             <sql>upload_image</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="components_accessories" xsi:type="AttributeText">
             <sql>components_accessories</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="asset_name" xsi:type="AttributeString">
             <sql>asset_name</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="device_hostname" xsi:type="AttributeString">
             <sql>device_hostname</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="serial_no" xsi:type="AttributeString">
             <sql>serial_no</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="asset_location" xsi:type="AttributeString">
             <sql>asset_location</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="ip_address" xsi:type="AttributeString">
             <sql>ip_address</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="site_id" xsi:type="AttributeString">
             <sql>site_id</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="site_name" xsi:type="AttributeString">
             <sql>site_name</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="asset_status" xsi:type="AttributeEnum">
             <values>
               <value>Active</value>
               <value>Inactive</value>
-              <value>Retired</value>
+              <value>Maintenance</value>
+              <value>Dispose</value>
             </values>
             <sql>asset_status</sql>
             <default_value>Active</default_value>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="software_installed" xsi:type="AttributeText">
             <sql>software_installed</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="operating_system" xsi:type="AttributeString">
             <sql>operating_system</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="start_warranty_period" xsi:type="AttributeDate">
             <sql>start_warranty_period</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="end_warranty_period" xsi:type="AttributeDate">
             <sql>end_warranty_period</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="delivery_date" xsi:type="AttributeDate">
             <sql>delivery_date</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="official_government_order_no" xsi:type="AttributeString">
             <sql>official_government_order_no</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="type_brand_model" xsi:type="AttributeString">
             <sql>type_brand_model</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="price_unit" xsi:type="AttributeDecimal">
             <sql>price_unit</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
+            <digits>2</digits>
           </field>
           <field id="supplier_name" xsi:type="AttributeString">
             <sql>supplier_name</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="warranty" xsi:type="AttributeString">
             <sql>warranty</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="purchase_date" xsi:type="AttributeDate">
             <sql>purchase_date</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="eol_date" xsi:type="AttributeDate">
             <sql>eol_date</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="supplier" xsi:type="AttributeString">
             <sql>supplier</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
           <field id="purchase_cost" xsi:type="AttributeDecimal">
             <sql>purchase_cost</sql>
             <default_value/>
-            <is_null_allowed>true</is_null_allowed>
+            <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
+            <digits>2</digits>
           </field>
         </fields>
         <methods/>
