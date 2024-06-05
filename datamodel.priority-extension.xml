@@ -189,12 +189,11 @@
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
-          <field id="price_unit" xsi:type="AttributeDecimal">
+          <field id="price_unit" xsi:type="AttributeString">
             <sql>price_unit</sql>
             <default_value/>
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
-            <digits>2</digits>
           </field>
           <field id="supplier_name" xsi:type="AttributeString">
             <sql>supplier_name</sql>
@@ -226,12 +225,11 @@
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
-          <field id="purchase_cost" xsi:type="AttributeDecimal">
+          <field id="purchase_cost" xsi:type="AttributeString">
             <sql>purchase_cost</sql>
             <default_value/>
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
-            <digits>2</digits>
           </field>
         </fields>
         <methods/>
