@@ -192,6 +192,7 @@
             <default_value/>
             <is_null_allowed>true</is_null_allowed>
             <tracking_level>none</tracking_level>
+            <digits>10</digits>
           </field>
           <field id="supplier_name" xsi:type="AttributeString">
             <sql>supplier_name</sql>
