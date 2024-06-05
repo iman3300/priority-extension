@@ -159,19 +159,19 @@
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
-          <field id="start_warranty_period" xsi:type="AttributeDate">
+          <field id="start_warranty_period" xsi:type="AttributeString">
             <sql>start_warranty_period</sql>
             <default_value/>
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
-          <field id="end_warranty_period" xsi:type="AttributeDate">
+          <field id="end_warranty_period" xsi:type="AttributeString">
             <sql>end_warranty_period</sql>
             <default_value/>
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
-          <field id="delivery_date" xsi:type="AttributeDate">
+          <field id="delivery_date" xsi:type="AttributeString">
             <sql>delivery_date</sql>
             <default_value/>
             <is_null_allowed>false</is_null_allowed>
@@ -207,13 +207,13 @@
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
-          <field id="purchase_date" xsi:type="AttributeDate">
+          <field id="purchase_date" xsi:type="AttributeString">
             <sql>purchase_date</sql>
             <default_value/>
             <is_null_allowed>false</is_null_allowed>
             <always_load_in_tables>true</always_load_in_tables>
           </field>
-          <field id="eol_date" xsi:type="AttributeDate">
+          <field id="eol_date" xsi:type="AttributeString">
             <sql>eol_date</sql>
             <default_value/>
             <is_null_allowed>false</is_null_allowed>
